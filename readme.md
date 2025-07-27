@@ -7,13 +7,14 @@ A silent SSH hijacker that operates and outplays encryption. It intercepts and l
 
 - SSH interceptor with full banner relay
 - Works with encryption phase 
-- `--invisible` mode: hides attacker in network using `iptables`
+- `--invisible` mode: hides attacker in network using
 - `--macspoof`: randomizes attacker MAC address
 - Auto restores system settings on exit
 - Wireshark and other tcp dumper can not see attacker ip using ivisible mode
-- attacker ip is not traceable even with forensic tool using invisible mode
-
-
+- Attacker ip is not traceable even with forensic tool using invisible mode
+- It does not defeat encryption, it outplays it
+- Do not use this, if you do not have any understanding, what your doing
+  
 ## Legal Disclaimer
 
 > This tool is intended for **authorized security research and red-team engagements only**. Unauthorized use is illegal and unethical.
