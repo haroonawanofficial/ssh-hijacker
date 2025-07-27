@@ -108,9 +108,9 @@ def run_interceptor(port):
         threads.append(t)
 
 def main():
-    parser = argparse.ArgumentParser(description="NSA-grade SSH Pre-Encryption Interceptor")
+    parser = argparse.ArgumentParser(description="SSH Hijacker/Interceptor")
     parser.add_argument("--port", type=int, default=22, help="Local port to bind to")
-    parser.add_argument("--invisible", action="store_true", help="Hide attacker traffic via iptables")
+    parser.add_argument("--invisible", action="store_true", help="Hide attacker traffic")
     parser.add_argument("--macspoof", metavar="IFACE", help="Spoof MAC address on interface")
     args = parser.parse_args()
 
