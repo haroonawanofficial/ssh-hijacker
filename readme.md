@@ -6,8 +6,7 @@ Silent SSH hijacker. It intercepts and logs SSH handshakes, silently relays traf
 
 ## Features
 
-- Full SSH interceptor with banner relay  
-- Operates during the pre-encryption handshake phase  
+- Full SSH interceptor with banner 
 - `--invisible` mode: hides attacker IP from network logs  
 - `--macspoof`: randomizes attacker MAC address  
 - Automatically restores all system settings on exit  
