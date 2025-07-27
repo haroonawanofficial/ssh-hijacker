@@ -1,31 +1,35 @@
-# SSH Hijacker — Interceptor
+# SSH Hijacker 
 
-A silent SSH hijacker that operates and outplays encryption. It intercepts and logs SSH handshakes, relays traffic silently, and supports stealth techniques like MAC spoofing and invisible network presence.
+Silent SSH hijacker that operates before and beyond encryption. It intercepts and logs SSH handshakes, silently relays traffic, and supports advanced stealth techniques such as MAC spoofing and invisible network presence.
 
+---
 
-## 🚀 Features
+## Features
 
-- SSH interceptor with full banner relay
-- Works with encryption phase 
-- `--invisible` mode: hides attacker in network using
-- `--macspoof`: randomizes attacker MAC address
-- Auto restores system settings on exit
-- Wireshark and other tcp dumper can not see attacker ip using ivisible mode
-- Attacker ip is not traceable even with forensic tool using invisible mode
-- It does not defeat encryption, it outplays it
-- Do not use this, if you do not have any understanding, what your doing
-  
+- Full SSH interceptor with banner relay  
+- Operates during the pre-encryption handshake phase  
+- `--invisible` mode: hides attacker IP from network logs  
+- `--macspoof`: randomizes attacker MAC address  
+- Automatically restores all system settings on exit  
+- Invisible to Wireshark and other packet analyzers using `--invisible`  
+- Attacker IP is untraceable even with forensic tools  
+- Does not break encryption — it outplays it  
+- Do **not** use this unless you fully understand what you're doing  
+
+---
+
 ## Legal Disclaimer
 
-> This tool is intended for **authorized security research and red-team engagements only**. Unauthorized use is illegal and unethical.
+> This tool is intended strictly for **authorized security research and red-team engagements**.  
+> Unauthorized use is illegal and unethical.
 
 ---
 
 ## Requirements
 
-- Linux (Debian/Ubuntu)
-- Python 3.6+
-- Root privileges
+- Linux (Debian/Ubuntu)  
+- Python 3.6+  
+- Root privileges  
 
 ---
 
@@ -37,14 +41,14 @@ cd ssh-hijacker
 sudo python3 ssh_hijacker.py --port 22
 ```
 
+
 ## How to use
 
 ```bash
 sudo python3 ssh_hijacker.py --invisible --macspoof eth0
 ```
 
-> Benefits on same network:
-
+Benefits on same network:
 1. Redirect all SSH traffic to you
 2. Spoof your MAC
 3. Hide you from trace in SSH logs
