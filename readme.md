@@ -1,6 +1,6 @@
 # SSH Hijacker 
 
-Silent SSH hijacker that operates before and beyond encryption. It intercepts and logs SSH handshakes, silently relays traffic, and supports advanced stealth techniques such as MAC spoofing and invisible network presence.
+Silent SSH hijacker. It intercepts and logs SSH handshakes, silently relays traffic, and supports advanced stealth techniques such as MAC spoofing and invisible network presence.
 
 ---
 
